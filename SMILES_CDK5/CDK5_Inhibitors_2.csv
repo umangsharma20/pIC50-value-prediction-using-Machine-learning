@@ -1,0 +1,3 @@
+ChEMBL_ID,canonical_smiles,IC50,IC50_units,Assay_Description
+CHEMBL1234833,CC(C)c1cnn2c(NCc3ccccc3)cc(N[C@@H](CO)[C@H](O)CO)nc12,30.0,nM,Inhibition of CDK5/cyclinT assessed as amount of ATP released by luciferase activity based PKLight assay
+CHEMBL14762,CC[C@H](CO)Nc1nc(NCc2ccccc2)c2ncn(C(C)C)c2n1,160.0,nM,Inhibition of CDK5/cyclinT assessed as amount of ATP released by luciferase activity based PKLight assay

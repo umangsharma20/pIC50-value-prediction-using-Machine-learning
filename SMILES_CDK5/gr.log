@@ -1,0 +1,31 @@
+nohup: ignoring input
+/home/umang23239/Chemi/MT23239/Input Files/SMILES_CDK5/grid.py:5: DtypeWarning: Columns (142,151,160,169,178,187,196,205,214,223,232,349,358,367,376,385,394,403,412,421,430,439,448,456,464,472,480,488,496,504,512,520,528,536,544,552,560,568,576,584,592,600,608,616,624,632,640,1101,1106,1180,1185,1572,1573,1575) have mixed types. Specify dtype option on import or set low_memory=False.
+  data=pd.read_csv("/home/umang23239/Chemi/MT23239/Input Files/SMILES_CDK5/final_data_label.csv").drop_duplicates(subset='Canonical SMILES',keep='first').dropna(axis=0).reset_index(drop=True)
+Best Parameters for SVR: {'C': 10, 'epsilon': 0.1, 'kernel': 'rbf'}
+Best Parameters for Random Forest: {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 100}
+SVR - Cross-Validation Results (MSE): 0.5515744962629255
+SVR - Train Metrics:
+MSE: 0.059156477870013977
+RMSE: 0.24322104734174216
+R²: 0.9547421595416447
+Adjusted R²: 4.711142917585138
+MAE: 0.14320886489392795
+Random Forest - Cross-Validation Results (MSE): 0.5910551447456102
+Random Forest - Train Metrics:
+MSE: 0.08913958405651347
+RMSE: 0.29856252955873996
+R²: 0.9318034944098863
+Adjusted R²: 6.592113458389323
+MAE: 0.20118912423093988
+SVR - Test Metrics:
+MSE: 0.4809429228282899
+RMSE: 0.6935004850959298
+R²: 0.6587885634129231
+Adjusted R²: 1.1119173512005611
+MAE: 0.48451245158351913
+Random Forest - Test Metrics:
+MSE: 0.5128448427760509
+RMSE: 0.7161318613049212
+R²: 0.6361553164753281
+Adjusted R²: 1.1193410561960924
+MAE: 0.4868794453626595

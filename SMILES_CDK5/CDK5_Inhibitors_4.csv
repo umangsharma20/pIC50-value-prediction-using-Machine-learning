@@ -1,0 +1,5 @@
+ChEMBL_ID,canonical_smiles,IC50,IC50_units,Assay_Description
+CHEMBL460989,COc1ccc2c(c1)CCc1c-2c2c(c3c4ccccc4n(CCO)c13)CNC2=O,10000.0,nM,Inhibition of human CDK expressed in baculovirus insect cell system
+CHEMBL460990,CC(C)Oc1ccc2c(c1)CCc1c-2c2c(c3c4ccccc4n(CCO)c13)CNC2=O,10000.0,nM,Inhibition of human CDK expressed in baculovirus insect cell system
+CHEMBL1276127,O=C1Nc2ccccc2/C1=C1/Nc2ccccc2C1=O,2200.0,nM,Inhibition of recombinant human CDK expressed in baculovirus infected sf9 cells after 10 mins by SDS-PAGE based autoradiography
+CHEMBL5285373,COc1ccc(CCNc2nc(N)c(C(=O)c3cc(OC)c(OC)c(OC)c3)s2)cc1,10000.0,nM,Inhibition of CDK (unknown origin)

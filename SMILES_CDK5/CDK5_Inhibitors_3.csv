@@ -1,0 +1,8 @@
+ChEMBL_ID,canonical_smiles,IC50,IC50_units,Assay_Description
+CHEMBL440411,O=C1Nc2ccc(S(=O)(=O)O)cc2/C1=C1/Nc2ccccc2/C1=N\O,7.0,nM,Inhibition of Cdk5
+CHEMBL337300,O=Nc1c(-c2c(O)[nH]c3ccc(I)cc23)[nH]c2ccccc12,20.0,nM,Inhibition of Cdk5
+CHEMBL261425,O=C1Nc2ccccc2/C1=C\c1c(Cl)[nH]c2ccccc12,25000.0,nM,Inhibition of Cdk5
+CHEMBL259850,COc1ccc(CNC(=O)Nc2ncc([N+](=O)[O-])s2)cc1,100000.0,nM,Inhibition of Cdk5
+CHEMBL126077,O=Nc1c(-c2c(O)[nH]c3ccccc23)[nH]c2ccccc12,100.0,nM,Inhibition of Cdk5
+CHEMBL1933576,CN1CCN(c2ccc(OC(F)(F)F)c(Nc3nccc(-c4cc(C(N)=O)cn4C)n3)c2)CC1,10000.0,nM,Inhibition of CDK5/P25
+CHEMBL1933582,CN1CCN(c2ccc(OC(F)(F)F)c(Nc3nccc(-c4cc5c(n4C)CCNC5=O)n3)c2)CC1,10000.0,nM,Inhibition of CDK5/P25
