@@ -1,42 +1,47 @@
-Design and Development of Ligands for Alzheimer's Disease and Parkinson's disease targeting CDK5 Using Machine Learning1. SMILES Generation for CDK5
+Ligand Design and Development for Alzheimer's and Parkinson's Disease Targeting CDK5 Using Machine Learning
+This project aims to design and develop potential inhibitors for CDK5 (Cyclin-dependent kinase 5), a key enzyme implicated in Alzheimer's and Parkinson's diseases. By leveraging machine learning, we identify compounds that can potentially inhibit CDK5 and predict their bioactivity. The key steps of the process are as follows:
+
+1. SMILES Generation for CDK5
 Goal: Identify inhibitors for CDK5 and represent their molecular structures in SMILES format.
 Approach:
-Use ChEMBL resources to search for CDK5-specific molecules.
-Apply filters to focus on human-specific targets and select compounds with available IC50 data.
-Screen for inhibitors and structure the data for further processing.
+
+Search ChEMBL for CDK5-specific molecules.
+Filter for human-specific targets and compounds with available IC50 data.
+Screen for potential inhibitors and structure the data for further processing.
 Save the processed information for descriptor calculations and model building.
 2. Molecular Descriptor Calculation for CDK5
-Goal: Generate a wide range of molecular descriptors to represent structural and physicochemical properties.
+Goal: Generate a wide range of molecular descriptors to capture structural and physicochemical properties.
 Approach:
+
 Convert SMILES into Isomeric SMILES for standardization.
-Compute descriptors, including both 2D and 3D features, using specialized computational tools.
-Preprocess the data by removing duplicates and unnecessary columns.
-Save the calculated descriptors in a structured format for machine learning applications.
+Compute both 2D and 3D molecular descriptors using specialized computational tools.
+Clean the dataset by removing duplicates and irrelevant columns.
+Store the calculated descriptors in a structured format suitable for machine learning applications.
 3. Fingerprint Generation for CDK5
 Goal: Create molecular fingerprints to capture essential structural features.
 Approach:
-Generate molecular fingerprints (e.g., ECFP or FCFP) for CDK5 inhibitors.
-Ensure the fingerprints are in a suitable format for machine learning input.
-Save the processed fingerprint data for further analysis.
+
+Generate molecular fingerprints, such as ECFP (Extended Connectivity Fingerprints) or FCFP (Functional Class Fingerprints), for the identified CDK5 inhibitors.
+Ensure that the fingerprints are in a suitable format for use in machine learning models.
+Save the fingerprint data for further analysis.
 4. Machine Learning Model for CDK5
 Goal: Build a regression model to predict the bioactivity (pIC50) of CDK5 inhibitors.
 Approach:
-Prepare the dataset by addressing missing values and filtering molecules based on drug-likeness criteria such as Lipinski’s rule.
+
+Preprocess the dataset by addressing missing values and filtering molecules based on drug-likeness criteria (e.g., Lipinski’s Rule of Five).
 Perform feature selection to identify the most relevant molecular descriptors.
-Split the data into training and testing sets (80:20) and normalize input features.
-Train regression models, such as Random Forest Regressor, with hyperparameter optimization.
-Evaluate the model using metrics like Mean Squared Error (MSE), Mean Absolute Error (MAE), and R-squared (R²).
-Visualize predictions and residuals to assess the model's accuracy and reliability.
+Split the dataset into training (80%) and testing (20%) sets, normalizing input features.
+Train a regression model (e.g., Random Forest Regressor) with hyperparameter optimization.
+Evaluate the model using performance metrics like Mean Squared Error (MSE), Mean Absolute Error (MAE), and R-squared (R²).
+Visualize model predictions and residuals to assess model accuracy and reliability.
 5. Model Evaluation
 Performance Metrics:
+
 R²: 0.6588
-RMSE: 0.6935
-MSE: 0.4809
-MAE: 0.4845
-Suggestions for Future Work
-Improved Data Representation:
-Integrate hybrid descriptors combining both 2D and 3D features for a richer molecular representation.
-Alternative Models:
-Explore advanced algorithms like Gradient Boosting or Neural Networks to enhance predictive accuracy.
-Validation:
-Conduct biological validation through docking studies or simulations to confirm the activity of top-ranked molecules.
+RMSE (Root Mean Squared Error): 0.6935
+MSE (Mean Squared Error): 0.4809
+MAE (Mean Absolute Error): 0.4845
+6. Suggestions for Future Work
+Improved Data Representation: Integrate hybrid descriptors that combine both 2D and 3D molecular features for a richer molecular representation.
+Alternative Models: Explore advanced algorithms like Gradient Boosting or Neural Networks to improve predictive accuracy.
+Validation: Conduct biological validation through docking studies or molecular simulations to confirm the activity of top-ranked inhibitors.
